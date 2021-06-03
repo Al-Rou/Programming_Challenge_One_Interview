@@ -14,29 +14,6 @@ public class GM {
         //To store all words separately, a list is defined
         List<String> listOfWords = new ArrayList<>();
         //Words are separated here
-        /*if (!inputSentence.equals(""))
-        {
-            System.out.println(inputSentence.length());
-            for (int z = 0; z < inputSentence.length(); z++)
-            {
-                System.out.println(inputSentence.charAt(z));
-            }
-            System.out.println(inputSentence.charAt(0));
-            System.out.println(inputSentence.charAt(1));
-            System.out.println(inputSentence.charAt(2));
-            System.out.println(inputSentence.charAt(3));
-            System.out.println(inputSentence.charAt(4));
-            System.out.println(inputSentence.charAt(5));
-            if (inputSentence.charAt(2) == ' ')
-            {
-                System.out.println("YES");
-            }
-            return;
-        }
-        else
-        {
-            System.out.println("NO");
-        }*/
         String auxiliary = "";
         for (int i = 0; i < inputSentence.length(); i++)
         {
@@ -49,7 +26,9 @@ public class GM {
                 auxiliary = "";
             }
         }
+        //The last word has to be added
         listOfWords.add(auxiliary);
+        //Words are printed out backwards
         for (int j = listOfWords.size()-1; j >= 0; j--)
         {
             System.out.print(listOfWords.get(j) + " ");
